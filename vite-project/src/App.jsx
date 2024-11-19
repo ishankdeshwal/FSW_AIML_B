@@ -1,34 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import React from 'react'
+import Student from './Student';
+import img from './assets/image.png'
 function App() {
-  const [count, setCount] = useState(0)
-
+  // let a=20;
+  // let mystyle={
+  //   backgroundColor:'cyan',
+  //   color:'red' ,
+  //   border:'7px solid black' ,
+  //   height:'100px' ,
+  //   fontSize:'100px'
+  // }
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    // <div style={{color:'red'}}>
+    //   {/* <h2>Abes engineering college</h2>
+    //   <div style={mystyle}>{a}</div>
+    //   <div><Student>
+    //     </Student></div> */}
+    //   </div>
+    <div className='icards'>
+
+      <Student pic={<img src={img} />} name="Ishank" branch="CSE-AIML" college="ABES ENGINEERING COLLEGE" roll="220032130082" section="B"  />
+      <Student pic={<img src={img} />} name="Ishank" branch="CSE-AIML" college="ABES ENGINEERING COLLEGE" roll="220032130082" section="B"  />
+      <Student pic={<img src={img} />} name="Ishank" branch="CSE-AIML" college="ABES ENGINEERING COLLEGE" roll="220032130082" section="B"  />
+      <Student pic={<img src={img} />} name="Ishank" branch="CSE-AIML" college="ABES ENGINEERING COLLEGE" roll="220032130082" section="B"  />
+      <Student pic={<img src={img} />} name="Ishank" branch="CSE-AIML" college="ABES ENGINEERING COLLEGE" roll="220032130082" section="B"  />
+      <Student pic={<img src={img} />} name="Ishank" branch="CSE-AIML" college="ABES ENGINEERING COLLEGE" roll="220032130082" section="B"  />
+    </div>
   )
 }
 
